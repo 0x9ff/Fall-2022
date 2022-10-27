@@ -63,7 +63,7 @@ def circle(x, y, radius, pensize=1, color="black", fill_color=""):
 
 
 # all the code to draw the picture goes here
-square(20, 50, 100, color="red", fill_color=(0, 150, 50))
+square(20, 50, 100, color="red", fill_color="black")
 circle(20, 50, 150, color="yellow", fill_color="yellow")
 
 window.mainloop()
