@@ -1,5 +1,5 @@
-# smiley.py
-# 3D (looking) square in a 2D turtle drawing
+# shocked.py
+# last modified 10/31/2022
 # created 10/25/2022
 
 import turtle
@@ -35,5 +35,7 @@ def circle(x, y, radius, pensize=1, color="black", fill_color=""):
 # all the code to draw the picture goes here
 circle(20, 50, 150, color="yellow", fill_color="yellow")
 circle(-60, 100, 20, color="black", fill_color="black")
+circle(60, 100, 20, color="black", fill_color="black")
+circle(0, -10, 20, color="black", fill_color="black")
 
 window.mainloop()
