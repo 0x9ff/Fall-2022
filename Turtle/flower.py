@@ -35,7 +35,7 @@ painter.turtlesize(2)
 
 
 # draw flower
-painter.color("darkorchid")
+painter.color("pink")
 painter.goto(20,180)
 petals = 0
 for petals in range(18):
@@ -46,11 +46,21 @@ for petals in range(18):
 
 # ring 2 of flower
 painter.goto(20,150)
-painter.color("blue")
+painter.color("yellow")
 petals = 0
 for petals in range(12):
   painter.right(30)
   painter.forward(30)
+  painter.stamp()
+
+
+# ring 3 of flower
+painter.goto(20,120)
+painter.color("yellow")
+petals = 0
+for petals in range(9):
+  painter.right(40)
+  painter.forward(20)
   painter.stamp()
 
 
