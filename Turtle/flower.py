@@ -1,4 +1,7 @@
-#   This code draws a flower.
+# flower.py
+# last modified 11/07/2022
+# created 11/07/2022
+
 import turtle as trtl
 
 window = trtl.Screen()
