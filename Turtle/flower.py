@@ -49,7 +49,7 @@ for petals in range(18):
 
 # ring 2 of flower
 painter.goto(20,150)
-painter.color("yellow")
+painter.color("purple")
 petals = 0
 for petals in range(12):
   painter.right(30)
