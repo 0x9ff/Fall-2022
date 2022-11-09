@@ -1,5 +1,5 @@
 # flower.py
-# last modified 11/07/2022
+# last modified 11/09/2022
 # created 11/07/2022
 
 import turtle as trtl
@@ -19,7 +19,7 @@ painter.setheading(90)
 painter.forward(100)
 
 
-#  leaf
+# leaf
 painter.setheading(270)
 painter.circle(20, 120, 20)
 painter.setheading(90)
