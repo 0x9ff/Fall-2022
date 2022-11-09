@@ -32,6 +32,7 @@
 # created 11/09/2022
 
 import turtle as trtl
+import json
 
 wn = trtl.Screen()
 wn.colormode(255)
@@ -40,11 +41,19 @@ painter = trtl.Turtle()
 painter.speed(0)
 painter.pensize(5)
 
-# starting location and dimensions of the tower
+with open('data.json') as f:
+  data = json.load(f)
+
+#################################################################
+# Dimensions of Tower & More
+# Tower 1
 x = -500
 y = -150
 width = 100
 num_floors = 50
+
+# Tower 2
+#################################################################
 
 # 1. Tower 1
 for floor in range(num_floors):
@@ -54,11 +63,48 @@ for floor in range(num_floors):
     painter.color("gray")
     y = y + 5  # location of next floor
 
+    if floor % 5 == 0:
+        painter.color("red")
+    elif floor % 5 == 1:
+        painter.color("orange")
+    elif floor % 5 == 2:
+        painter.color("yellow")
+    elif floor % 5 == 3:
+        painter.color("green")
+    else:
+        painter.color("blue")
+
+
+
     # draw the floor
     painter.pendown()
     painter.forward(width)
 
 # 2. Tower 2
+for floor in range(num_floors):
+    # set placement and color of turtle
+    painter.penup()
+    painter.goto(x, y)
+    painter.color("gray")
+    y = y + 5  # location of next floor
+
+    if floor % 5 == 0:
+        painter.color("red")
+    elif floor % 5 == 1:
+        painter.color("orange")
+    elif floor % 5 == 2:
+        painter.color("yellow")
+    elif floor % 5 == 3:
+        painter.color("green")
+    else:
+        painter.color("blue")
+
+
+
+    # draw the floor
+    painter.pendown()
+    painter.forward(width)
+
 
 # 3. Tower 3
 
