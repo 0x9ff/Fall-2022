@@ -32,7 +32,6 @@
 # created 11/09/2022
 
 import turtle as trtl
-import json
 
 wn = trtl.Screen()
 wn.colormode(255)
@@ -40,9 +39,6 @@ wn.colormode(255)
 painter = trtl.Turtle()
 painter.speed(0)
 painter.pensize(5)
-
-with open('data.json') as f:
-  data = json.load(f)
 
 #################################################################
 # Dimensions of Tower & More
@@ -104,7 +100,6 @@ for floor in range(num_floors):
     # draw the floor
     painter.pendown()
     painter.forward(width)
-
 
 # 3. Tower 3
 
